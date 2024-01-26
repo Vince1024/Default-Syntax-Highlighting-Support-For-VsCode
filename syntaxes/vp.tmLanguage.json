@@ -1,0 +1,102 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Default",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#block_comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+				"name": "keyword.control.vp",
+				"match": "(?i)&?\\b(if|then|else|endif|do|while|for|next|exit|return|break|goto|end|set_string|rename|ping|tracert|nmap)\\b"
+				},
+				{
+				"name": "keyword.control.info.vp",
+				"match": "(?i)\\b(INFO|INFORMATION|TEST|QA|DEV|VERIF|VERIFS|VERIFICATION|VERIFICATIONS)\\b"
+				},
+				{
+				"name": "keyword.control.ok.vp",
+				"match": "(?i)\\b(OK|SUCCESS|YES|AUTHENTICATED)\\b"
+				},
+				{
+				"name": "keyword.control.warn.vp",
+				"match": "(?i)\\b(WARN|WARNING|CHALLENGED)\\b"
+				},
+				{
+				"name": "keyword.control.error.vp",
+				"match": "(?i)\\b(ERR|ERROR|FAILED|KO|NO|DENIED|DISCONNECTED|DOWN|REFUS|REFUSE|FAIL|FRAUD|FRAUDE|PROD)\\b"
+				},
+				{
+				"name": "keyword.control.special.vp",
+				"match": "(?i)\\b(DEBUG|STM|WSP|GPS|IEBMS)\\b"
+				}
+				]
+		},
+		"functions": {
+			"patterns": [
+				{
+				"name": "support.function.vp",
+				"match": "(?i)(tostring|fct)"
+				},
+				{
+				"comment": "parameter",
+				"name": "support.class.vp",
+				"match": "\\B-\\w+"
+				},
+				{
+				"name": "string.other.path.vp",
+				"match": "\\S+(\/|\\+|<+|>+|@)\\S+"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.vp",
+			"begin": "(\\(| |^)(\"|\\')[^\\)]",
+    		"end": "\\s*(\"|\\')",
+			"patterns": [
+			{
+				"include": "#strings"
+			}]
+		},
+		"constants": {
+			"name": "constant.numeric.vp",
+			"match": "[0-9]"
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.vp",
+					"match": "^(// |--|& |#).*$"
+				}
+				]
+		},
+		"block_comments": {
+			"name": "comment.block.cm",
+			"begin": "/\\*",
+    		"end": "\\*/",
+			"patterns": [
+			{
+				"include": "#block_comments"
+			}]
+		}
+	},
+	"scopeName": "source.vp"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "default-syntax-highlighting",
+  "displayName": "default.syntax.highlighting",
+  "description": "Default Syntax Highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vp",
+      "aliases": ["Default", "vp"],
+      "extensions": [".vp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vp",
+      "scopeName": "source.vp",
+      "path": "./syntaxes/vp.tmLanguage.json"
+    }]
+  }
+}
