@@ -14,4 +14,4 @@ First Release.
 
 ## Bugs
 
-If you happen to notice bugs or have suggestions for improvements visit the [issue section]() of the [repository]().
+If you happen to notice bugs or have suggestions for improvements visit the [issue section](https://github.com/Vince1024/Default-Syntax-Highlighting-Support-For-VsCode/issues) of the [repository](https://github.com/Vince1024/Default-Syntax-Highlighting-Support-For-VsCode).
