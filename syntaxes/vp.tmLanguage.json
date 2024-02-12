@@ -30,7 +30,7 @@
 				},
 				{
 				"name": "keyword.control.info.vp",
-				"match": "(?i)\\b(INFO|INFORMATION|TEST|QA|DEV|VERIF|VERIFS|VERIFICATION|VERIFICATIONS)\\b"
+				"match": "(?i)\\b(INFO|INFORMATION|TEST|QA|DEV|VERIF|VERIFS|VERIFICATION|VERIFICATIONS|MORIA|LINUX)\\b"
 				},
 				{
 				"name": "keyword.control.ok.vp",
@@ -78,13 +78,13 @@
 		},
 		"constants": {
 			"name": "constant.numeric.vp",
-			"match": "[0-9]"
+			"match": "\\d+"
 		},
 		"comments": {
 			"patterns": [
 				{
 					"name": "comment.line.vp",
-					"match": "^(// |--|& |#).*$"
+					"match": "^(//|--|& |#).*$"
 				}
 				]
 		},

@@ -2,7 +2,8 @@
   "name": "default-syntax-highlighting",
   "displayName": "default.syntax.highlighting",
   "description": "Default Syntax Highlighting",
-  "version": "0.0.1",
+  "icon": "images/Icon.png",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -21,5 +22,12 @@
       "scopeName": "source.vp",
       "path": "./syntaxes/vp.tmLanguage.json"
     }]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vince1024/Default-Syntax-Highlighting-Support-For-VsCode"
+  },
+  "homepage": "https://github.com/Vince1024/Default-Syntax-Highlighting-Support-For-VsCode/blob/main/README.md",
+  "publisher": "Vincent1024",
+  "pricing": "Free"
 }
